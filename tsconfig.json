@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    /* Language and Environment */
+    "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "ESNext",                                 /* Use ESNext modules for Vite/ESM support */
+    "lib": ["DOM","ESNext"],                         /* Include DOM and latest ECMAScript library declarations */
+    "jsx": "react-jsx",                                /* Use React JSX transform */
+
+    /* Modules */
+    "moduleResolution": "Node",                        /* How modules get resolved */
+    "resolveJsonModule": true,                           /* Enable importing .json files */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports */
+
+    /* Type Checking */
+    "strict": true,                                      /* Enable all strict type-checking options */
+    "skipLibCheck": true,                                /* Skip type checking all .d.ts files */
+
+    /* Vite environment variable types */
+    "types": ["vite/client"]                           /* Enables import.meta.env type definitions */
+  },
+  "include": ["src"]                                   /* Include the source folder for compilation */
+}

@@ -1,0 +1,172 @@
+/* src/App.css */
+
+/* ───────────────────────────────────────────────────────────── */
+/* 1. 전역 레이아웃: html, body, #root 전체 높이/너비 */
+/* ───────────────────────────────────────────────────────────── */
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #1e1e1e;
+  color: #fff;
+}
+
+/* ───────────────────────────────────────────────────────────── */
+/* 2. 최상위 App 컨테이너: CSS Grid로 헤더·네비·메인·푸터 분할 */
+/* ───────────────────────────────────────────────────────────── */
+.app {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto; /* header, nav, main, footer */
+  height: 100%;
+  width: 100%;
+}
+
+/* ───────────────────────────────────────────────────────────── */
+/* 3. 헤더 · 네비 · 푸터 */
+/* ───────────────────────────────────────────────────────────── */
+.header {
+  background: #723333;
+  padding: 1rem 2rem;
+  justify-content: center; /* 가로 중앙 정렬 */
+  display: flex;
+}
+.navbar {
+  background: #723333;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center; /* 가로 중앙 정렬 */
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer {
+  background: #723333;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+/* ───────────────────────────────────────────────────────────── */
+/* 4. 메인 컨텐츠 래퍼 (스크롤 가능) */
+/* ───────────────────────────────────────────────────────────── */
+main.container {
+  overflow-y: auto; /* 내용이 넘치면 스크롤 */
+  width: 50%;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+}
+
+/* ───────────────────────────────────────────────────────────── */
+/* 5. 검색창 */
+/* ───────────────────────────────────────────────────────────── */
+.search-box {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+.search-box input {
+  width: 50%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* ───────────────────────────────────────────────────────────── */
+/* 6. 카드 그리드 (.grid, .card) */
+/* ───────────────────────────────────────────────────────────── */
+.grid {
+  display: grid;
+  gap: 1rem;
+  /* 카드 최소 폭을 작게 조정 */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  margin-top: 1rem;
+}
+.card {
+  background: #fff;
+  color: #000;
+  height: 120px;
+  border-radius: 8px;
+}
+
+/* ───────────────────────────────────────────────────────────── */
+/* 7. 영화 상세 레이아웃 */
+/* ───────────────────────────────────────────────────────────── */
+.movie-info-wrapper {
+  width: 50%;
+  max-width: 800px;
+  margin: 1rem auto;
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.movie-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-info img {
+  flex: 0 0 200px;
+  width: 200px;
+  height: auto;
+  border-radius: 4px;
+}
+.movie-detail {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.movie-detail h2 {
+  margin: 0;
+}
+
+/* ───────────────────────────────────────────────────────────── */
+/* 8. 한줄평 입력·목록 */
+/* ───────────────────────────────────────────────────────────── */
+.input-review {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.button {
+  margin-top: 0.5rem;
+  background: #e89393;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.review-list {
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+.review-list li {
+  background: #f4f4f4;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+/* 검색창 */
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 auto 2rem;
+  max-width: 600px;
+}
