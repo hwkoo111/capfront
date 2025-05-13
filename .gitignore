@@ -27,6 +27,7 @@ dist-ssr
 # node.js
 node_modules/
 dist/
+backend/
 # Vite env
 .env*
 # IDE 설정
