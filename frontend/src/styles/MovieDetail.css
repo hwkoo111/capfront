@@ -1,0 +1,257 @@
+/* 전체 카드형 배치 */
+.movie-detail-root {
+  max-width: 740px;
+  margin: 44px auto 38px auto;
+  padding: 40px 28px 54px 28px;
+  background: #f8fafc;
+  border-radius: 22px;
+  box-shadow: 0 9px 38px rgba(30,60,180,0.07);
+  min-height: 92vh;
+  font-family: 'Noto Sans KR', 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* 제목 */
+.movie-detail-title {
+  font-size: 2.3rem;
+  font-family: 'Raleway', 'Noto Sans KR', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin: 28px 0 36px 0;
+  color: #19204d;
+}
+
+/* 포스터 + 정보 */
+.movie-detail-main {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 42px;
+}
+.movie-detail-posterbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+  max-width: 160px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 14px rgba(90,110,180,0.08);
+  padding: 16px 12px 12px 12px;
+  transition: box-shadow 0.16s;
+}
+.movie-detail-poster img {
+  width: 110px;
+  height: 154px;
+  background: #efefef;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px 0 rgba(100,100,100,0.10);
+  margin-bottom: 10px;
+  transition: box-shadow 0.16s;
+}
+.movie-detail-poster-title {
+  text-align: center;
+  font-size: 1.07rem;
+  font-weight: 700;
+  color: #23233e;
+  margin-top: 2px;
+  word-break: keep-all;
+}
+
+/* 오른쪽 상세정보 리스트 */
+.movie-detail-infolist {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.movie-detail-infoline {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 6px;
+}
+.movie-detail-info-label {
+  min-width: 54px;
+  color: #3551b9;
+  font-weight: 700;
+  font-size: 1.01rem;
+  letter-spacing: 0.02em;
+}
+.movie-detail-info-value {
+  color: #2c2c37;
+  font-size: 1.01rem;
+  font-weight: 400;
+  word-break: keep-all;
+}
+
+/* 줄거리 */
+.movie-detail-section {
+  margin: 36px 0 24px 0;
+}
+.movie-detail-section-title {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #4464e8;
+  margin-bottom: 8px;
+}
+.movie-detail-section-body {
+  font-size: 1.05rem;
+  color: #36395a;
+  line-height: 1.7;
+  background: #f6f8fb;
+  border-radius: 9px;
+  padding: 18px 16px;
+  box-shadow: 0 1px 4px 0 rgba(100,100,100,0.04);
+}
+
+/* 리뷰 전체영역 */
+.movie-detail-reviewarea {
+  margin-top: 36px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(80,100,255,0.05);
+  padding: 30px 24px 20px 24px;
+}
+.movie-detail-review-label {
+  color: #4876ef;
+  font-size: 1.12rem;
+  font-weight: 800;
+  margin-bottom: 17px;
+  letter-spacing: 0.01em;
+}
+.movie-detail-review-starbox {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.movie-detail-review-starbox img {
+  width: 26px;
+  height: 26px;
+  margin-right: 2px;
+}
+.movie-detail-review-score {
+  font-size: 1.23rem;
+  color: #21359b;
+  font-weight: 900;
+  margin-right: 7px;
+}
+.movie-detail-review-count {
+  font-size: 0.95rem;
+  color: #8b95af;
+}
+
+/* 리뷰 입력 폼 */
+.movie-detail-review-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.movie-detail-review-select {
+  font-size: 1.03rem;
+  padding: 6px 10px;
+  border-radius: 7px;
+  border: 1.2px solid #e0e7ef;
+  background: #f6f9fe;
+  outline: none;
+  min-width: 60px;
+}
+.movie-detail-review-input {
+  flex: 1;
+  font-size: 1.02rem;
+  padding: 8px 12px;
+  border-radius: 7px;
+  border: 1.2px solid #e0e7ef;
+  background: #f6f9fe;
+  outline: none;
+}
+.movie-detail-review-btn {
+  background: #888;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  padding: 0.62rem 1.35rem;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background 0.19s, box-shadow 0.18s;
+  box-shadow: 0 1px 7px rgba(74,144,226,0.11);
+}
+.movie-detail-review-btn:hover {
+  background: #3551b9;
+}
+.movie-detail-review-error {
+  color: #e05454;
+  font-size: 1rem;
+  margin-bottom: 9px;
+  font-weight: 600;
+}
+
+/* 리뷰 리스트 */
+.movie-detail-review-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.movie-detail-review-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 12px 8px;
+  border-radius: 8px;
+  background: #f8f9fc;
+  box-shadow: 0 1px 5px rgba(80,80,80,0.07);
+  border: 1px solid #e4e9f2;
+  font-size: 1.02rem;
+}
+.movie-detail-review-item-score {
+  font-weight: 700;
+  color: #3551b9;
+  font-size: 1.08rem;
+  margin-right: 6px;
+}
+.movie-detail-review-item-comment {
+  color: #35374b;
+}
+
+/* 반응형 */
+@media (max-width: 700px) {
+  .movie-detail-root {
+    padding: 14px 2vw 20px 2vw;
+    max-width: 99vw;
+  }
+  .movie-detail-title {
+    font-size: 1.18rem;
+    margin: 14px 0 22px 0;
+  }
+  .movie-detail-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .bual {
+  font-size: 1rem;
+  padding: 6px 18px;
+  border-radius: 6px;
+  border: 1px solid #d5d5d5;
+  background: #ededed;
+  color: #333;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.15s, color 0.13s, border 0.13s;
+  outline: none;
+  margin-right: 7px;
+  /* box-shadow: none;  // 원하는 경우 활성 */
+}
+  .movie-detail-section { margin: 14px 0 12px 0; }
+  .movie-detail-section-body { padding: 10px 7px; font-size: 0.99rem; }
+  .movie-detail-reviewarea { padding: 13px 4px 11px 4px; }
+}

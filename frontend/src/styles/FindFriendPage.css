@@ -1,0 +1,173 @@
+/* 전체 컨테이너 */
+.find-friend-container {
+  max-width: 820px;
+  margin: 80px auto 0 auto;
+  padding: 0 0 48px 0;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 80vh;
+}
+
+/* 제목 */
+.find-friend-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #161616;
+  text-align: center;
+  margin: 56px 0 34px 0;
+  letter-spacing: -0.02em;
+}
+
+/* 검색바 */
+.find-friend-searchbar-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 38px;
+}
+.find-friend-searchbar {
+  width: 420px;
+  display: flex;
+  align-items: center;
+  border: 1.1px solid #bbb;
+  border-radius: 20px;
+  background: #fff;
+  padding: 3px 15px;
+}
+.find-friend-searchbar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.03rem;
+  padding: 9px 0;
+}
+.find-friend-searchbar .search-icon {
+  font-size: 1.14rem;
+  color: #888;
+}
+
+/* 친구/영화 목록 섹션 */
+.find-friend-custom-title {
+  font-weight: 600;
+  font-size: 1.07rem;
+  margin: 24px 0 17px 13vw;
+  color: #222;
+  text-align: left;
+  letter-spacing: -0.01em;
+}
+
+/* 카드 그리드 */
+.find-friend-movie-list {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  margin-bottom: 28px;
+}
+.find-friend-movie-card {
+  background: #ececec;
+  width: 160px;
+  height: 230px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 0;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.find-friend-movie-title {
+  font-size: 1.01rem;
+  font-weight: 500;
+  color: #232323;
+  text-align: center;
+  margin: 14px 0 7px 0;
+}
+
+.find-friend-detail-btn {
+  width: 94px;
+  padding: 7px 0;
+  margin-bottom: 15px;
+  font-size: 0.97rem;
+  color: #b35443;
+  background: #fff;
+  border: 1px solid #b35443;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.13s, color 0.13s;
+}
+.find-friend-detail-btn:hover {
+  background: #b35443;
+  color: #fff;
+}
+
+/* comment 입력 */
+.find-friend-comment-label {
+  font-weight: 500;
+  margin-left: 11vw;
+  color: #242424;
+  display: block;
+  margin-bottom: 7px;
+}
+.find-friend-comment-input {
+  display: block;
+  width: 74%;
+  margin: 0 auto 0 11vw;
+  padding: 8px 14px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #fafafa;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1000px) {
+  .find-friend-container { max-width: 98vw; }
+  .find-friend-searchbar { width: 92vw; }
+  .find-friend-movie-list { gap: 20px; }
+  /* .find-friend-movie-card { width: 500px; height: 500px; } */
+  .find-friend-comment-input { width: 93vw; margin-left: 2vw; }
+  .find-friend-custom-title { margin-left: 2vw; }
+}
+
+/* placeholder-style */
+.find-friend-searchbar input::placeholder,
+.find-friend-comment-input::placeholder {
+  color: #bbb;
+  font-size: 1.02rem;
+}
+.find-friend-comment-section {
+  margin-top: 18px;
+  text-align: left;
+}
+
+.find-friend-comment-btn-row {
+  display: flex;
+  gap: 9px;
+  margin-left: 11vw;
+  margin-top: 8px;
+}
+
+.comment-btn {
+  background: #fff;
+  border: 1px solid #b35443;
+  color: #b35443;
+  border-radius: 4px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.13s, color 0.13s;
+}
+.comment-btn:hover:enabled {
+  background: #b35443;
+  color: #fff;
+}
+.comment-btn:disabled {
+  background: #eee;
+  color: #aaa;
+  border-color: #ccc;
+  cursor: not-allowed;
+}

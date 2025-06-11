@@ -1,0 +1,245 @@
+.my-page-root {
+  max-width: 650px;
+  margin: 0 auto;
+  padding-top: 60px;
+  font-family: 'Pretendard', 'Noto Sans KR', Arial, sans-serif;
+}
+
+.my-page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -1.5px;
+}
+
+.my-page-nickname-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.my-page-nickname-label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.my-page-nickname-form {
+  display: flex;
+  align-items: center;
+}
+
+.my-page-nickname-input {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  margin-right: 7px;
+  width: auto;
+  transition: border 0.2s;
+}
+
+.my-page-nickname-btn  {
+  background: #f5f5f5;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 50%;
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.my-page-nickname-btn:hover {
+  background: #d7d7d7;
+}
+
+.my-page-msg {
+  margin-left: 16px;
+  color: #cc0000;
+  font-size: 0.97rem;
+  font-weight: 500;
+}
+
+.my-page-section-title {
+  font-size: 1.14rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 22px;
+  letter-spacing: -0.5px;
+}
+
+.my-page-movie-row {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 22px;
+}
+
+.my-page-section-title-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* 아이콘과 텍스트 간격 조절 */
+}
+
+.my-page-section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.my-page-movie-edit-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.my-page-movie-edit-btn:hover {
+  color: #000;
+}
+
+.my-page-movie-card {
+  background: #f7f7f7;
+  border-radius: 10px;
+  width: 500px;
+  height: 100%;
+  position: relative;
+  box-shadow: 0 1px 5px rgba(110, 110, 110, 0.04);
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-page-movie-toolbar {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  display: flex;
+  gap: 9px;
+}
+
+.my-page-movie-img {
+  width: 90px;
+  height: 110px;
+  border-radius: 7px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.my-page-movie-title {
+  font-size: 0.92rem;
+  font-weight: 500;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.my-page-movie-empty {
+  color: #999;
+  font-size: 1.02rem;
+  padding: 30px 0;
+}
+
+
+.my-page-playlist-list {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.my-page-playlist-card {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1.3px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 17px;
+  box-shadow: 0 2px 8px rgba(90, 90, 90, 0.07);
+  min-height: 62px;
+  padding: 0;
+  position: relative;
+}
+
+.my-page-playlist-card:hover {
+  box-shadow: 0 4px 24px 0 rgba(180, 60, 60, 0.11);
+  border-color: #bb3d30;
+}
+
+.my-page-playlist-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 62px;
+  padding: 0 18px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.my-page-playlist-title {
+  flex: 2 1 0;
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #222;
+  text-align: left;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 20px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: none;
+  display: block;
+}
+
+.my-page-playlist-date {
+  flex: 1 1 0;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  padding: 0 8px;
+  white-space: nowrap;
+}
+
+.my-page-playlist-author {
+  flex: 1 1 0;
+  font-size: 0.99rem;
+  color: #888;
+  text-align: right;
+  padding: 0 8px;
+  white-space: nowrap;
+}
+
+.my-page-playlist-actions {
+  display: flex;
+  gap: 7px;
+  margin-left: 16px;
+}
+
+.my-page-playlist-actions button {
+  background: #ececec;
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 6px;
+  padding: 6px 13px;
+  font-size: 0.94rem;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+
+.my-page-playlist-actions button:hover {
+  background: #bb3d30;
+  color: #fff;
+  border-color: #bb3d30;
+}
+
+.my-page-playlist-empty {
+  width: 100%;
+  text-align: center;
+  color: #bbb;
+  padding: 36px 0 18px 0;
+  font-size: 1.07rem;
+}

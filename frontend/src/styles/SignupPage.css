@@ -1,0 +1,97 @@
+/* 전체 회원가입 폼 스타일 */
+.signup-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 중앙 정렬 */
+  margin-top: 200px; /* 폼을 아래로 내리기 */
+}
+
+/* 제목 스타일 */
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* 폼 그룹 스타일 */
+.form-group {
+  width: 100%;
+  margin-bottom: 20px; /* 폼 그룹 간 간격 추가 */
+}
+
+/* 레이블 스타일 */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* 입력 필드 스타일 */
+.input-field {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  margin-bottom: 15px; /* 입력 필드 간 간격 추가 */
+}
+
+/* 포커스 시 스타일 */
+.input-field:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* 회원가입 버튼 스타일 */
+.signup-btn {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px; /* 버튼과 입력 필드 간 간격 추가 */
+}
+
+/* 버튼 호버 시 스타일 */
+.signup-btn:hover {
+  background-color: #c0392b;
+}
+
+/* 오류 메시지 */
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* 성공 메시지 */
+.success-message {
+  color: green;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-bottom: 10px;
+}

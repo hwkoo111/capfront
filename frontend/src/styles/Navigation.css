@@ -1,0 +1,159 @@
+/* 전체 네비게이션 바 */
+nav.navbar {
+  width: 100%;
+  background: #333;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  box-shadow: 0 1px 8px rgba(60, 60, 60, 0.06);
+  font-family: inherit;
+}
+
+/* 네비 메뉴 (중앙) */
+.navbar-menu {
+  display: flex;
+  gap: 48px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.07rem;
+  font-weight: 400;
+  padding: 6px 10px;
+  transition: color 0.18s;
+  border-radius: 5px;
+  letter-spacing: 0.03em;
+}
+
+.navbar-menu a.active,
+.navbar-menu a:focus {
+  color: #ffe282;
+  font-weight: 700;
+  background: transparent;
+}
+
+.navbar-menu a:hover {
+  color: #ffe282;
+  background: #292929;
+}
+
+/* 우측(인증/유저) */
+.navbar-auth {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-right: 28px;
+}
+
+.navbar-welcome {
+  color: #fff;
+  font-size: 0.98rem;
+  margin-right: 3px;
+  letter-spacing: -0.01em;
+}
+
+.logout-btn {
+  background: none;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 4px 13px;
+  font-size: 0.96rem;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.18s, color 0.18s;
+  margin-right: 3px;
+}
+
+.logout-btn:hover {
+  background: #ffe282;
+  color: #222;
+  border-color: #ffe282;
+}
+
+.user {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #555;
+  margin-left: 6px;
+}
+
+.user img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 로그인 회원가입입 */
+.auth-link {
+  display: inline-block;
+  padding: 5px 18px;
+  border-radius: 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+  border: 1.5px solid #51d1b9;
+  background: transparent;
+  color: #51d1b9;
+  margin-left: 2px;
+}
+
+.auth-link:hover {
+  background: #51d1b9;
+  color: #fff;
+  border-color: #32b09d;
+}
+
+.auth-link:last-child {
+  border-color: #fe92a2;
+  color: #fe92a2;
+  margin-left: 5px;
+}
+
+.auth-link:last-child:hover {
+  background: #fe92a2;
+  color: #fff;
+  border-color: #d8667e;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .navbar-menu {
+    gap: 20px;
+  }
+  .navbar-auth {
+    margin-right: 8px;
+    gap: 8px;
+  }
+  nav.navbar {
+    height: 48px;
+  }
+  .user {
+    width: 25px;
+    height: 25px;
+  }
+  .logout-btn {
+    font-size: 0.87rem;
+    padding: 3px 8px;
+  }
+  .auth-link {
+    font-size: 0.93rem;
+    padding: 3px 12px;
+  }
+}

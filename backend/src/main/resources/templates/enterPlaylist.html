@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>플레이리스트 등록</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        form {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 400px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .message {
+            margin-top: 20px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>플레이리스트 생성</h2>
+
+<form th:action="@{/playlist/full-create}" method="post">
+    <label for="name">플레이리스트 이름</label>
+    <input type="text" id="name" name="name" placeholder="예: 감성영화 모음" required>
+
+    <label for="membernameorid">회원 ID 또는 이름</label>
+    <input type="text" id="membernameorid" name="membernameorid" placeholder="예: hong123 또는 홍길동" required>
+
+    <label for="movieTitles">영화 제목들 (콤마로 구분)</label>
+    <input type="text" id="movieTitles" name="movieTitles" placeholder="예: 인셉션, 인터스텔라, 테넷" required>
+
+    <button type="submit">등록</button>
+</form>
+
+<!-- 성공 메시지 출력 -->
+<div th:if="${param.success}" class="message">
+    ✅ [[${param.success}]] 처리되었습니다!
+</div>
+
+</body>
+</html>

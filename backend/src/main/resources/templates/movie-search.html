@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>영화 검색</title>
+    <style>
+        body { font-family: sans-serif; max-width: 700px; margin: 2rem auto; }
+        input, button { padding: 8px; margin-right: 4px; }
+        .movie {
+            margin-top: 1rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+        }
+        .movie img {
+            width: 120px;
+            margin-right: 1rem;
+            border-radius: 4px;
+        }
+        .movie-info {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+<h1>영화 검색</h1>
+<input id="keyword" type="text" placeholder="영화 제목 입력" />
+<button onclick="search()">검색</button>
+
+<div id="results"></div>
+
+<script>
+    async function search() {
+        const keyword = document.getElementById('keyword').value;
+        const res = await fetch(`/api/movies/search?keyword=` + encodeURIComponent(keyword));
+
+        const data = await res.json();
+        console.log("API 응답:", data);
+
+        // 응답이 배열인지 확인하고 처리
+        const movies = Array.isArray(data) ? data : data.result || data.data || [];
+
+        const resultsDiv = document.getElementById('results');
+        resultsDiv.innerHTML = '';
+
+        if (movies.length === 0) {
+            resultsDiv.innerHTML = '<p>검색 결과가 없습니다.</p>';
+            return;
+        }
+
+        movies.forEach(movie => {
+            const div = document.createElement('div');
+            div.className = 'movie';
+            div.innerHTML = `
+                <img src="${movie.posterUrl}" alt="${movie.title} 포스터">
+                <div class="movie-info">
+                    <h3>${movie.title}</h3>
+                    <p><strong>장르:</strong> ${movie.genre}</p>
+                    <p><strong>상영시간:</strong> ${movie.runtime}</p>
+                    <p><strong>관람등급:</strong> ${movie.rating}</p>
+                    <p><strong>개봉일자:</strong> ${movie.releaseDts}</p>
+                    <p><strong>감독:</strong> ${movie.director}</p>
+                    <p><strong>등장인물:</strong> ${(movie.actors || []).join(', ')}</p>
+                    <p><strong>줄거리:</strong> ${movie.plot}</p>
+                </div>
+            `;
+            resultsDiv.appendChild(div);
+        });
+    }
+</script>
+</body>
+</html>

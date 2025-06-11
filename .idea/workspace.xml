@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a58acf0d-adde-48e8-a0a9-5d5d7cf5edc5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/deu/movietalk/controller/PlaylistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/deu/movietalk/controller/PlaylistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/deu/movietalk/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/deu/movietalk/repository/PlaylistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/deu/movietalk/service/PlaylistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/deu/movietalk/service/PlaylistService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Mypage/MyPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Mypage/MyPage.js" afterDir="false" />
+>>>>>>> 58814a60a4aa9d7fa4b59be9e4a89a82dfabb5d5
+=======
+>>>>>>> bab1483ec605eebbb66119258682169898548886
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/backend">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2x7txjDbTKGAWkltxzaz2ZmNu8Z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MovietalkApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build backend.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.backend [:MovietalkApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.MovietalkApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;backend__mk&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.MovietalkApplication">
+    <configuration name="MovietalkApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="deu.movietalk.MovietalkApplication" />
+      <module name="movietalk.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deu.movietalk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovietalkApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="movietalk.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="deu.movietalk.MovietalkApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deu.movietalk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MovietalkApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a58acf0d-adde-48e8-a0a9-5d5d7cf5edc5" name="Changes" comment="" />
+      <created>1747301190563</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747301190563</updated>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <workItem from="1749475811533" duration="2615000" />
+      <workItem from="1749479079764" duration="3235000" />
+      <workItem from="1749530264426" duration="2966000" />
+=======
+>>>>>>> 58814a60a4aa9d7fa4b59be9e4a89a82dfabb5d5
+=======
+>>>>>>> bab1483ec605eebbb66119258682169898548886
+    </task>
+    <servers />
+  </component>
+</project>

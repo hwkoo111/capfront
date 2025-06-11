@@ -1,0 +1,349 @@
+.community-posts {
+  max-width: 700px;
+  margin: 60px auto 0 auto;
+  padding-bottom: 60px;
+  background: #fff;
+  min-height: 75vh;
+}
+.heading {
+  text-align: left;
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #181818;
+  margin: 16px 0 0 0;
+  letter-spacing: -0.01em;
+}
+.sub-heading {
+  text-align: left;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #181818;
+  margin: 16px 0 24px 0;
+}
+.search-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+.search-type {
+  padding: 7px 10px;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background: #fff;
+  color: #222;
+}
+.search-input {
+  flex: 1;
+  padding: 7px 14px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fafbfc;
+}
+/* 카테고리 선택 스타일 */
+.category-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 1.35rem; /* 제목과 동일한 크기 */
+  font-weight: 800; /* 제목과 동일한 두께 */
+  color: #181818; /* 제목과 동일한 색 */
+}
+
+.category-select label {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #181818;
+}
+
+.category-select select {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background: #fafbfc;
+  color: #222;
+  cursor: pointer;
+}
+
+/* 카테고리 선택 스타일 */
+.category-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-select label {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #181818;
+}
+
+.category-select-input {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background: #fafbfc;
+  color: #222;
+  cursor: pointer;
+}
+
+.search-btn {
+  background: #353638;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 15px;
+  font-size: 1.07rem;
+  cursor: pointer;
+  margin-right: 6px;
+}
+.write-btn {
+  background: #353638;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 6px;
+  transition: background 0.14s;
+}
+.write-btn:hover {
+  background: #bb3d30;
+}
+
+.post-header-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #bbb;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #fff;
+  background: #353638;
+  height: 44px;
+  margin-bottom: 6px;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+.post-header-row .post-title {
+  flex: 2.5;
+  text-align: left;
+  padding-left: 26px;
+}
+.post-header-row .post-date {
+  flex: 1;
+  text-align: center;
+}
+.post-header-row .post-nickname {
+  flex: 1;
+  text-align: right;
+  padding-right: 26px;
+}
+
+.post-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.post-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1.4px solid #ddd;
+  border-radius: 9px;
+  background: #fff;
+  margin-bottom: 17px;
+  box-shadow: 0 2px 8px rgba(90, 90, 90, 0.07);
+  padding: 22px 0 22px 0;
+  transition: background 0.13s, box-shadow 0.13s;
+}
+.post-item:last-child {
+  border-bottom: none;
+}
+.post-item:hover {
+  background: #fafafa;
+  box-shadow: 0 6px 20px 0 rgba(180, 60, 60, 0.11);
+}
+.post-title {
+  flex: 2.5;
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #888;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 26px;
+}
+.post-date {
+  flex: 1;
+  font-size: 1.04rem;
+  color: #888;
+  text-align: center;
+}
+.post-nickname {
+  flex: 1;
+  font-size: 1.01rem;
+  color: #888;
+  text-align: right;
+  padding-right: 26px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+  width: 100%;
+}
+.pagination-btn {
+  background: none;
+  border: none;
+  color: #353638;
+  font-size: 1.08rem;
+  padding: 5px 13px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.14s, color 0.12s;
+}
+.pagination-btn:disabled {
+  color: #ddd;
+  cursor: not-allowed;
+  background: none;
+}
+.pagination-btn.selected,
+.pagination-btn:hover:not(:disabled) {
+  background: #353638;
+  color: #fff;
+}
+
+/* 글쓰기 */
+.write-form {
+  margin-top: 32px;
+  max-width: 870px;
+}
+.write-title-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.write-label {
+  font-size: 1.01rem;
+  font-weight: 600;
+  color: #232323;
+}
+.write-title-input {
+  flex: 1;
+  font-size: 0.98rem;
+  padding: 8px 13px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  background: #fafbfc;
+}
+.write-contents {
+  width: 100%;
+  font-size: 0.99rem;
+  border: 1.2px solid #bbb;
+  border-radius: 7px;
+  padding: 14px 11px;
+  min-height: 200px;
+  resize: vertical;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.write-btn {
+  background: #353638;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 7px;
+  transition: background 0.14s;
+}
+.write-btn:hover {
+  background: #bb3d30;
+}
+
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+}
+.loading-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+}
+@media (max-width: 900px) {
+  .community-posts {
+    max-width: 99vw;
+  }
+  .post-header-row {
+    font-size: 0.98rem;
+    padding: 11px 7px;
+  }
+  .post-title,
+  .post-date,
+  .post-nickname {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.post-header-row,
+.post-item {
+  display: flex;
+  align-items: center;
+}
+.post-header-row > span,
+.post-item > span {
+  flex: 1;
+  text-align: left;
+}
+.post-action-header,
+.post-action {
+  flex: 0 0 110px;
+  text-align: center;
+}
+.edit-btn,
+.delete-btn {
+  font-size: 1rem;
+  padding: 6px 18px;
+  border-radius: 6px;
+  border: 1px solid #d5d5d5;
+  background: #ededed;
+  color: #333;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.15s, color 0.13s, border 0.13s;
+  outline: none;
+  margin-right: 7px;
+  /* box-shadow: none;  // 원하는 경우 활성 */
+}
+
+.edit-btn:last-child,
+.delete-btn:last-child {
+  margin-right: 0;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  background: #e84343; /* hover시 빨간색 배경 */
+  color: #fff;
+  border-color: #bb3d30;
+}

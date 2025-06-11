@@ -1,0 +1,106 @@
+.chatgpt-box {
+  position: fixed;
+  bottom: 40px; /* 화면 중앙 하단에서 조금 더 떨어지게 설정 */
+  left: 50%; /* 화면 중앙으로 배치 */
+  transform: translateX(-50%); /* 정확한 중앙 정렬을 위해 X축으로 -50% 이동 */
+  width: 420px; /* 챗박스 크기 확장 */
+  background: linear-gradient(145deg, #f9f9f9, #f1f1f1); /* 그라디언트 배경 */
+  border: 1px solid #ddd;
+  border-radius: 16px; /* 라운딩을 더 부드럽게 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 4px 30px rgba(0, 0, 0, 0.1); /* 부드럽고 깊은 그림자 */
+  z-index: 999;
+  font-size: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s ease; /* 부드러운 애니메이션 효과 */
+}
+
+.chatgpt-messages {
+  max-height: 300px; /* 메시지 영역 크기 제한 */
+  overflow-y: auto; /* 스크롤 추가 */
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  padding: 10px 15px;
+  border-radius: 12px;
+  line-height: 1.6;
+  font-size: 15px;
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+/* 👤 유저 메시지 */
+.message.user {
+  background-color: #4caf50; /* 밝은 초록색 */
+  color: white;
+  border-radius: 12px 12px 0 12px;
+  text-align: left;
+  align-self: flex-end;
+  margin-left: auto;
+  width: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+}
+
+/* 🤖 어시스턴트 메시지 */
+.message.assistant {
+  background-color: #e3e4e8; /* 연한 회색 */
+  color: #333;
+  border-radius: 12px 12px 12px 0;
+  text-align: left;
+  align-self: flex-start;
+  margin-right: auto;
+  width: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+}
+
+.chatgpt-input-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.chatgpt-input-row input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.chatgpt-input-row input:focus {
+  border-color: #007BFF; /* 포커스 시 파란색 테두리 */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+.chatgpt-input-row button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chatgpt-input-row button:hover {
+  background-color: #0056b3;
+}
+
+.loading {
+  font-style: italic;
+  color: #666;
+  font-size: 14px;
+}

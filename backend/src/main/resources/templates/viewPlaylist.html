@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>플레이리스트 목록</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #888;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .header-container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-container h2 {
+            margin: 0;
+        }
+        .header-container a button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .header-container a button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-container">
+    <h2>플레이리스트 목록</h2>
+    <a th:href="@{/playlist/enter}">
+        <button>작성</button>
+    </a>
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <th>플레이리스트 이름</th>
+        <th>작성자</th>
+        <th>작성일</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="playlist : ${playlists}">
+        <td th:text="${playlist.playListName}">플레이리스트명</td>
+        <td th:text="${playlist.memberNickname}">작성자</td>
+        <td th:text="${playlist.playListDate}">날짜</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

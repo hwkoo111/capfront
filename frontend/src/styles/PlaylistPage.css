@@ -1,0 +1,193 @@
+body {
+  background: #fff;
+}
+
+.playlist-container {
+  max-width: 700px;
+  margin: 48px auto 0 auto;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playlist-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 34px;
+  width: 100%;
+  text-align: left;
+}
+
+.playlist-search-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+.playlist-search-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 22px;
+  font-size: 1.08rem;
+  background: #fafbfc;
+  outline: none;
+}
+.write-btn {
+  background: #353638;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.16s;
+}
+.write-btn:hover {
+  background: #bb3d30;
+}
+
+/* 헤더 탭 */
+.playlist-header-row {
+  width: 100%;
+  display: flex;
+  background: #353638;
+  border-radius: 7px;
+  padding: 13px 18px;
+  margin-bottom: 24px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08rem;
+}
+.playlist-header-row span {
+  flex: 2 1 0;
+  text-align: left;
+}
+.playlist-header-row span:nth-child(2) {
+  flex: 1 1 0;
+  text-align: center;
+}
+.playlist-header-row span:nth-child(3) {
+  flex: 1 1 0;
+  text-align: right;
+}
+
+/* 카드형 리스트 */
+.playlist-list {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.playlist-card {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1.3px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 17px;
+  box-shadow: 0 2px 8px rgba(90,90,90,0.07);
+  min-height: 62px;
+  padding: 0;
+  position: relative;
+}
+.playlist-card:hover {
+  box-shadow: 0 4px 24px 0 rgba(180,60,60,0.11);
+  border-color: #bb3d30;
+}
+.playlist-card-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 62px;
+  padding: 0 18px;
+  position: relative;
+  box-sizing: border-box;
+}
+.playlist-card-title {
+  flex: 2 1 0;
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #222;
+  text-align: left;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 20px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: none;
+  /* Link와 button 공통 대응 */
+  display: block;
+}
+
+.playlist-card-date {
+  flex: 1 1 0;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  padding: 0 8px;
+  white-space: nowrap;
+}
+
+.playlist-card-author {
+  flex: 1 1 0;
+  font-size: 0.99rem;
+  color: #888;
+  text-align: right;
+  padding: 0 8px;
+  white-space: nowrap;
+}
+
+/* 버튼 우측 정렬 */
+.playlist-card-actions {
+  display: flex;
+  gap: 7px;
+  margin-left: 16px;
+}
+.playlist-card-actions button {
+  background: #ececec;
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 6px;
+  padding: 6px 13px;
+  font-size: 0.94rem;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+.playlist-card-actions button:hover {
+  background: #bb3d30;
+  color: #fff;
+  border-color: #bb3d30;
+}
+
+/* 빈 상태 */
+.playlist-item-empty {
+  width: 100%;
+  text-align: center;
+  color: #bbb;
+  padding: 36px 0 18px 0;
+  font-size: 1.07rem;
+}
+
+/* 페이지네이션 */
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 0 0 0;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .playlist-container { max-width: 99vw; }
+  .playlist-header-row { font-size: 0.96rem; padding: 11px 7px; }
+  .playlist-card-row { flex-direction: column; align-items: flex-start; padding: 10px 6px; }
+  .playlist-card-title, .playlist-card-date, .playlist-card-author, .playlist-card-actions { padding: 6px 0; }
+  .playlist-card-actions { margin-left: 0; }
+}
